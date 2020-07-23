@@ -6,7 +6,7 @@ builds:
   - id: server
     main: ./cmd/main.go
     ldflags:
-      - -s -w -X main.release={{.Version}} -X main.commit={{.Commit}} -X main.repo={{.GitURL}}
+      - -s -w -X cmd.release={{.Version}} -X cmd.commit={{.Commit}} -X cmd.repo={{.GitURL}}
     env:
       - CGO_ENABLED=0
     goos:

@@ -2,7 +2,7 @@
 
 # custom define
 PROJECT := goproject
-MAINFILE := cmd/main.go
+MAINFILE := main.go
 
 all: build
 
