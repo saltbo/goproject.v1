@@ -1,7 +1,7 @@
 .PHONY: all dep lint vet test test-coverage build clean
 
 # custom define
-PROJECT := goproject
+PROJECT := {{cookiecutter.project_name}}
 MAINFILE := main.go
 
 all: build

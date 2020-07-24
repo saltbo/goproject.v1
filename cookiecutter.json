@@ -1,0 +1,25 @@
+{
+  "author": "saltbo",
+  "project_name": "goproject-test",
+  "description": "A Golang project.",
+  "use_cobra_cmd": "y",
+  "web_framework": [
+    "none",
+    "github.com/gin-gonic/gin"
+  ],
+  "orm": [
+    "none",
+    "github.com/jinzhu/gorm",
+    "github.com/go-xorm/xorm"
+  ],
+  "redis": [
+    "none",
+    "github.com/go-redis/redis/v7",
+    "github.com/go-redis/redis/v6",
+    "github.com/go-redis/redis/v5"
+  ],
+  "_copy_without_render": [
+    ".goreleaser.yml",
+    ".github/workflows/*.yml"
+  ]
+}
