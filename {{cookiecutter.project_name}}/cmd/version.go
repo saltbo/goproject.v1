@@ -20,7 +20,7 @@ var versionCmd = &cobra.Command{
 	Use:   "version",
 	Short: "print the version",
 	Run: func(cmd *cobra.Command, args []string) {
-		fmt.Sprintf("release: %s, repo: %s, commit: %s", release, repo, commit)
+		fmt.Printf("release: %s, repo: %s, commit: %s", release, repo, commit)
 	},
 }
 
