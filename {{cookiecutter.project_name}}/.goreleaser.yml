@@ -4,7 +4,7 @@ before:
     - go mod download
 builds:
   - id: server
-    main: ./cmd/main.go
+    main: ./main.go
     ldflags:
       - -s -w -X cmd.release={{.Version}} -X cmd.commit={{.Commit}} -X cmd.repo={{.GitURL}}
     env:
